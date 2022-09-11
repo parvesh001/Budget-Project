@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUDGET APPLICATION</title>
+    <!-- ======== LINK FONT AWESOME ======== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ======== LINK STYLE SHEET CSS ======== -->
+    <link rel="stylesheet" href="sass file/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- ======== BUDGET SECTION ======== -->
+      <section id="budget-section">
+        <p class="feedback-msg budget-feedback"></p>
+        <form id="budget-form">
+          <label for="budget-input">please enter your budget</label>
+          <input
+            type="text"
+            name="budget"
+            id="budget-input"
+            autocomplete="off"
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </section>
+      <!-- ======== END BUDGET SECTION ======== -->
+
+      <!-- ======== BUDGET OUTPUT ======== -->
+      <section id="outputs-section">
+        <div class="budget-output">
+          <h2>budget</h2>
+          <i class="fa-solid fa-money-bill-1 big-icon"></i>
+          <div class="number">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p class="budget">0</p>
+          </div>
+        </div>
+        <div class="expense-output">
+          <h2>expense</h2>
+          <i class="fa-solid fa-money-check big-icon"></i>
+          <div class="number">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p class="expense">0</p>
+          </div>
+        </div>
+        <div class="balance-output">
+          <h2>balance</h2>
+          <i class="fa-solid fa-dollar-sign big-icon"></i>
+          <div class="number">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p class="balance">0</p>
+          </div>
+        </div>
+      </section>
+      <!-- ======== END OUTPUT SECTION ======== -->
+
+      <!-- ======== EXPENSE AND LIST DIVISION ======== -->
+      <div id="expense-and-list">
+        <!-- ======== EXPENSE SECTION ======== -->
+        <section id="expense-section">
+          <p class="feedback-msg expense-feedback"></p>
+          <form id="expense-form">
+            <label for="expense-item">please enter your expense</label>
+            <input
+              type="text"
+              name="expense-item"
+              id="expense-item"
+              autocomplete="off"
+            />
+            <label for="expense-amount">please enter your expense amount</label>
+            <input
+              type="text"
+              name="expense-amount"
+              id="expense-amount"
+              autocomplete="off"
+            />
+            <input type="submit" value="submit" />
+          </form>
+        </section>
+        <!-- ======== END EXPENSE SECTION ======== -->
+
+        <!-- ======== LIST SECTION ======== -->
+        <section id="list-section">
+          <div class="heading">
+            <h2>item</h2>
+            <h2>amount</h2>
+            <h2></h2>
+          </div>
+          <ul class="item-list">
+            <!-- <li class="list-item">
+                <p class="item">item</p>
+                <p class="amount">20</p>
+                <div class="icons">
+                    <i class="fa-regular fa-edit" data-id=0></i>
+                    <i class="fa-regular fa-trash-alt" data-id=0></i>
+                </div>
+            </li> -->
+          </ul>
+        </section>
+        <!-- ======== END LIST SECTION ======== -->
+      </div>
+      <!-- ======== END EXPENSE AND LIST  DIVISION ======== -->
+    </main>
+
+    <!-- ======== LINK JS FILE ======== -->
+    <script src="js file/script.js"></script>
+  </body>
+</html>
